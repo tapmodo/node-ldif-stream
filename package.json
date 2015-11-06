@@ -1,0 +1,15 @@
+{
+  "name": "ldif-stream",
+  "version": "0.2.0",
+  "description": "Read LDIF entries as a stream",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tapmodo <khallman@tapmodo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "event-stream": "^3.3.2",
+    "ldif": "^0.2.0"
+  }
+}
