@@ -10,6 +10,6 @@
   "license": "MIT",
   "dependencies": {
     "event-stream": "^3.3.2",
-    "ldif": "^0.2.0"
+    "ldif": "^0.4.0"
   }
 }
