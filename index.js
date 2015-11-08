@@ -35,7 +35,7 @@ Streamer.parse = es.map(function(data,cb){
 // Maps LDIF values
 Streamer.ldif = function(options){
   return es.map(function(data,cb){
-    try{ cb(null,data.toLDIF(options)); }
+    try{ cb(null,data.toLDIF(options.width)); }
       catch (err) { cb(); }
   });
 };
@@ -61,6 +61,7 @@ Streamer.record = function(options){
 
 // Default options
 Streamer.defaults = {
+  width: 78,
   delimiter: "\n\n",
   parser: Streamer.parse,
   pipeline: [ Streamer.object, Streamer.record ],
